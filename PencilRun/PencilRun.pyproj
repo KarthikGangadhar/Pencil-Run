@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d194a21b-b6b2-4a49-8070-7dc23cf6c172</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Controller.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PencilRun</Name>
+    <RootNamespace>PencilRun</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\sound\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\bird\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\cactus\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\coin\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\GirlPencil\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\menu\frontimage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\menu\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\moon\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\path\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\pencil\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\Speckspencil\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\Specks\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\text\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\Sprite\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Assets\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\GameObjects\Cactus.py" />
+    <Compile Include="Game\GameObjects\Coin.py" />
+    <Compile Include="Game\GameObjects\Moon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\GameObjects\Path.py" />
+    <Compile Include="Game\GameObjects\PencilObjects.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\GameObjects\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\MainControl.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Scenes\MenuScene.py" />
+    <Compile Include="Game\Scenes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Shared\GameConstants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Shared\HighScore.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Shared\PencilClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Shared\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Game\Assets\" />
+    <Folder Include="Game\Assets\sound\" />
+    <Folder Include="Game\Assets\Sprite\" />
+    <Folder Include="Game\Assets\Sprite\bird\" />
+    <Folder Include="Game\Assets\Sprite\cactus\" />
+    <Folder Include="Game\Assets\Sprite\coin\" />
+    <Folder Include="Game\Assets\Sprite\GirlPencil\" />
+    <Folder Include="Game\Assets\Sprite\menu\" />
+    <Folder Include="Game\Assets\Sprite\menu\frontimage\" />
+    <Folder Include="Game\Assets\Sprite\moon\" />
+    <Folder Include="Game\Assets\Sprite\Littlepencil\" />
+    <Folder Include="Game\Assets\Sprite\path\" />
+    <Folder Include="Game\Assets\Sprite\pencil\" />
+    <Folder Include="Game\Assets\Sprite\Speckspencil\" />
+    <Folder Include="Game\Assets\Sprite\Specks\" />
+    <Folder Include="Game\Assets\Sprite\text\" />
+    <Folder Include="Game\GameObjects\" />
+    <Folder Include="Game\Scenes\" />
+    <Folder Include="Game\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game\Assets\sound\gameover.wav" />
+    <Content Include="Game\Assets\sound\jump.wav" />
+    <Content Include="Game\Assets\Sprite\bird\bird_1.png" />
+    <Content Include="Game\Assets\Sprite\bird\bird_2.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus1.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus11.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus2.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus22.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus3.png" />
+    <Content Include="Game\Assets\Sprite\cactus\cactus4.png" />
+    <Content Include="Game\Assets\Sprite\coin\coin1.png" />
+    <Content Include="Game\Assets\Sprite\coin\coin2.png" />
+    <Content Include="Game\Assets\Sprite\coin\coin3.png" />
+    <Content Include="Game\Assets\Sprite\GameOver.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil11.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil12.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil13.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil14.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil15.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil16.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil4.png" />
+    <Content Include="Game\Assets\Sprite\GirlPencil\girlpencil5.png" />
+    <Content Include="Game\Assets\Sprite\highscore.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil11.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil12.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil13.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil14.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil15.png" />
+    <Content Include="Game\Assets\Sprite\Littlepencil\littlepencil16.png" />
+    <Content Include="Game\Assets\Sprite\menu.png" />
+    <Content Include="Game\Assets\Sprite\menu\back_blue.png" />
+    <Content Include="Game\Assets\Sprite\menu\back_red.png" />
+    <Content Include="Game\Assets\Sprite\menu\bg.png" />
+    <Content Include="Game\Assets\Sprite\menu\Creditst_buttons_crop.png" />
+    <Content Include="Game\Assets\Sprite\menu\Creditst_buttons_pressed_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\exit_buttons_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\exit_buttons_pressed_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\11.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\12.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\13.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\14.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\15.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\16.png" />
+    <Content Include="Game\Assets\Sprite\menu\frontimage\17.png" />
+    <Content Include="Game\Assets\Sprite\menu\mouse.png" />
+    <Content Include="Game\Assets\Sprite\menu\next_blue.png" />
+    <Content Include="Game\Assets\Sprite\menu\next_red.png" />
+    <Content Include="Game\Assets\Sprite\menu\optionst_buttons_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\optionst_buttons_pressed_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\play_buttons_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\play_buttons_pressed_2_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\play_buttons_pressed_blue_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\play_buttons_pressed_cropped.png" />
+    <Content Include="Game\Assets\Sprite\menu\select.png" />
+    <Content Include="Game\Assets\Sprite\menu\select_red.png" />
+    <Content Include="Game\Assets\Sprite\menu\top_banner.jpg" />
+    <Content Include="Game\Assets\Sprite\moon\moon11.png" />
+    <Content Include="Game\Assets\Sprite\moon\moon12.png" />
+    <Content Include="Game\Assets\Sprite\moon\moon13.png" />
+    <Content Include="Game\Assets\Sprite\moon\moon14.png" />
+    <Content Include="Game\Assets\Sprite\path\path3.png" />
+    <Content Include="Game\Assets\Sprite\path\path4.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil1.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil2.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil3.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil4.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil5.png" />
+    <Content Include="Game\Assets\Sprite\pencil\pencil6.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks1.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks2.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks3.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks4.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks5.png" />
+    <Content Include="Game\Assets\Sprite\Specks\specks6.png" />
+    <Content Include="Game\Assets\Sprite\text\321impact.ttf" />
+    <Content Include="Game\Assets\Sprite\text\Roboto-MediumItalic.ttf" />
+    <Content Include="Game\Assets\Sprite\Untitled.png" />
+    <Content Include="Game\Shared\highscore.dat" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
