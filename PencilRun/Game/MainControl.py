@@ -13,7 +13,7 @@ class MainControl(object):
         pygame.mixer.init()
         self.keepGameLoop = True
         self.screen = pygame.display.set_mode(C.Size)
-        self.Lives = 5
+        self.Lives = 3
         self.Score = 0
         self.moon = Moon.Moon()
         
@@ -29,6 +29,7 @@ class MainControl(object):
         self.menu = MenuScene()
         self.character = TallPencil() 
         self.select_character_count = 0
+        self.initializeMainAgain = False
 
     def selectPencil(self):
         if self.select_character_count == 0:
@@ -80,7 +81,11 @@ class MainControl(object):
                     self.screen.blit(pygame.image.load(C.GameOverText), C.GameOverPosition)
                     self.GameOversound.play()
                     time.sleep(8)
-                    self.menu.HighestScoreScene(self.Score)
+                    self.initializeMainAgain = self.menu.HighestScoreScene(self.Score)
+                    if self.initializeMainAgain:
+                        self.initializeMainAgain = False
+                        self.menu = MenuScene()
+                        self.menu.start()
                     running = False
                 if intersects or intersects2:
                     self.cactus = Cactus1()

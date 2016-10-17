@@ -15,6 +15,8 @@ class MenuScene(object):
          self.select_character_count = 0
          pygame.display.set_caption('Help these Geeks to reach their School!! ')
          self.character = -1
+         self.scoreUpdateCount = 0
+         self.initializeMainAgain = False
      
      def addText(self, string, x=0, y=0, color = [255,80,40], background = [0, 0, 0], size = 17, type = False):
         
@@ -35,7 +37,6 @@ class MenuScene(object):
             textrect = (x,y,tooltip_rect[2],tooltip_rect[3])
             tooltiprect = (x,y,tooltip_rect[2],tooltip_rect[3])
             self.Screen.blit(tooltipsurface, textrect)
-         #pygame.display.update()
          return textrect
 
      def setyLimit(self,credit_y, y_change):
@@ -275,10 +276,14 @@ class MenuScene(object):
                     if event.key >= 65 and event.key <= 122:
                         self.playerName += chr(event.key)
                     elif event.key == pygame.K_SPACE:
-                        highscore.add(self.playerName, score)
-                        waitTillNameEntered = True
+                        if self.scoreUpdateCount == 0:
+                            self.scoreUpdateCount += 1 
+                            highscore.add(self.playerName, score)
+                            waitTillNameEntered = True
                     elif event.key == pygame.K_F1:
-                        self.start()
+                        self.scoreUpdateCount = 0
+                        self.initializeMainAgain = True
+                        return self.initializeMainAgain
                     elif event.key == pygame.K_F2:
                         exit()
                         
