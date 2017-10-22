@@ -1,6 +1,8 @@
 # Pencil-Run
 
 The Pencil-Run is Race Game created using Google doodles little student pencil animations for Teacher’s Day 2016. The animation shows a five pencils, where one of them represents a teacher, wearing spectacles and reading a book, while four other little student pencils can be seen walking behind the teacher with much enthusiasm.
+
+![detail-view](./PencilRun/readme-pics/detail-view.gif)
  
 ## Dependencies
 
